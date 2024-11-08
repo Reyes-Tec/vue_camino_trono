@@ -44,7 +44,7 @@
         </div>
       </div>
     </nav>
-
+    <!--  -->
     <main class="container mt-5">
       <slot></slot>
       <!-- Aquí se inyectará el contenido de cada página -->

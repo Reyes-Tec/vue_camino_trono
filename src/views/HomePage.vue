@@ -1,21 +1,21 @@
 <!-- src/views/HomePage.vue -->
 <template>
-  <MainLayout>
-    <!-- Sección Principal -->
-    <header class="masthead mb-3">
-      <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-        <div class="d-flex justify-content-center">
-          <div class="text-center">
-            <h1 class="mx-auto my-0 text-uppercase">¡Bienvenido a "Camino al Trono"!</h1>
-            <h2 class="text-white-50 mx-auto mt-2 mb-5">
-              Prepárate para sumergirte en una aventura inolvidable, donde tu habilidad para
-              enfrentar enemigos, superar obstáculos y desvelar los secretos del trono será puesta a
-              prueba. ¿Tienes lo necesario para reclamar la corona?
-            </h2>
-          </div>
+  <header class="masthead mb-3">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div class="text-center">
+          <h1 class="mx-auto my-0 text-uppercase">¡Bienvenido a "Camino al Trono"!</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">
+            Prepárate para sumergirte en una aventura inolvidable, donde tu habilidad para enfrentar
+            enemigos, superar obstáculos y desvelar los secretos del trono será puesta a prueba.
+            ¿Tienes lo necesario para reclamar la corona?
+          </h2>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
+  <MainLayout>
+    <!-- Sección Principal -->
 
     <!-- Sección de Contenido -->
     <section id="inicio" class="mb-5">
