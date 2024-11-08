@@ -1,4 +1,5 @@
 <script setup>
+// import { RouterLink } from 'vue-router'
 import NavVue from '../components/Nav.vue'
 </script>
 
@@ -6,7 +7,7 @@ import NavVue from '../components/Nav.vue'
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container" id="input">
-        <a class="navbar-brand" href="home"> <i class="fas fa-crown"></i> Camino al Trono </a>
+        <a class="navbar-brand" href="/"> <i class="fas fa-crown"></i> Camino al Trono </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -23,17 +24,17 @@ import NavVue from '../components/Nav.vue'
               </a>
             </li>
             <li class="nav-item" id="nav">
-              <a class="nav-link" href="historia">
+              <a class="nav-link" href="/historia">
                 <img src="/img/historia.png" width="20" alt="Galería" class="me-2" /> Historia
               </a>
             </li>
             <li class="nav-item" id="nav">
-              <a class="nav-link" href="galeria">
+              <a class="nav-link" href="/galeria">
                 <img src="/img/galeria.png" width="20" alt="Galería" class="me-2" /> Galería
               </a>
             </li>
             <li class="nav-item" id="nav">
-              <a class="nav-link" href="soporte">
+              <a class="nav-link" href="/soporte">
                 <img src="/img/soporte.png" width="20" alt="Galería" class="me-2" /> Soporte
               </a>
             </li>
