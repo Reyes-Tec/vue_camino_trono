@@ -1,62 +1,19 @@
+
 <!-- src/components/MainLayout.vue -->
 <template>
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container" id="input">
-        <router-link class="navbar-brand" to="/">
-          <i class="fas fa-crown"></i> Camino al Trono
-        </router-link>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item" id="nav">
-              <router-link class="nav-link" to="/">
-                <img src="/img/home.png" width="20" alt="Inicio" class="me-2" />
-                Inicio
-              </router-link>
-            </li>
-            <li class="nav-item" id="nav">
-              <router-link class="nav-link" to="/historia">
-                <img src="/img/historia.png" width="20" alt="Historia" class="me-2" />
-                Historia
-              </router-link>
-            </li>
-            <li class="nav-item" id="nav">
-              <router-link class="nav-link" to="/galeria">
-                <img src="/img/galeria.png" width="20" alt="Galería" class="me-2" />
-                Galería
-              </router-link>
-            </li>
-            <li class="nav-item" id="nav">
-              <router-link class="nav-link" to="/soporte">
-                <img src="/img/soporte.png" width="20" alt="Soporte" class="me-2" />
-                Soporte
-              </router-link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+
+
     <!--  -->
-    <main class="container mt-5">
-      <slot></slot>
+    <main>
       <!-- Aquí se inyectará el contenido de cada página -->
+    <router-view />
     </main>
 
-    <footer class="bg-dark text-center text-white py-3 mt-5" id="footer">
-      <p style="text-align: center">&copy; 2024 Camino al Trono. Todos los derechos reservados.</p>
-    </footer>
-  </div>
+
 </template>
 
 <script>
+
 export default {
   name: 'MainLayout',
 }

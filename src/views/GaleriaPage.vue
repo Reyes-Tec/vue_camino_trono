@@ -1,5 +1,5 @@
 <template>
-  <MainLayout>
+
     <section id="historia" class="mb-5">
       <div class="container">
         <div class="row" style="padding-top: 4rem">
@@ -26,15 +26,5 @@
         </div>
       </div>
     </section>
-  </MainLayout>
-</template>
-<script>
-import MainLayout from '../components/MainLayout.vue'
 
-export default {
-  name: 'GaleriaPage',
-  components: {
-    MainLayout,
-  },
-}
-</script>
+</template>

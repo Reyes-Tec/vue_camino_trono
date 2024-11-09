@@ -1,27 +1,32 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import MainLayout from '../components/MainLayout.vue'
-import HomePage from '../views/HomePage.vue'
 import HistoriaPage from '../views/HistoriaPage.vue'
 import GaleriaPage from '../views/GaleriaPage.vue'
 import SoportePage from '../views/SoportePage.vue'
+import HomeView from '@/views/HomeView.vue'
 
 const routes = [
   {
     path: '/',
-    component: MainLayout,
-    children: [
-      { path: '', component: HomePage },
-      { path: 'historia', component: HistoriaPage },
-      { path: 'galeria', component: GaleriaPage },
-      { path: 'soporte', component: SoportePage },
-    ],
+    name: 'Home',
+    component: HomeView,
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import('../views/AboutView.vue'),
+    path: '/historia',
+    name: 'Historia',
+    component: HistoriaPage,
+  },
+  {
+    path: '/galeria',
+    name: 'Galeria',
+    component: GaleriaPage,
+  },
+  {
+    path: '/soporte',
+    name: 'Soporte',
+    component: SoportePage,
   },
 ]
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
