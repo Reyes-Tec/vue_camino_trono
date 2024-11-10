@@ -1,35 +1,38 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container" id="input">
-      <a class="navbar-brand" href="home"> <i class="fas fa-crown"></i> Camino al Trono </a>
+    <div class="container">
+      <a class="navbar-brand" href="/" style="color: white;">Camino al Trono</a>
+
+      <!-- Botón de menú alineado a la derecha en todas las vistas -->
       <button
-        class="navbar-toggler"
+        class="navbar-toggler ms-auto"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
           <li class="nav-item" id="nav">
-            <a class="nav-link" href="/">
-              <img src="/img/home.png" width="20" alt="Galería" class="me-2" /> Inicio
+            <a class="nav-link d-flex align-items-center" href="/">
+              <img src="/img/home.png" width="20" alt="Inicio" class="me-2" /> Inicio
             </a>
           </li>
           <li class="nav-item" id="nav">
-            <a class="nav-link" href="historia">
-              <img src="/img/historia.png" width="20" alt="Galería" class="me-2" /> Historia
+            <a class="nav-link d-flex align-items-center" href="historia">
+              <img src="/img/historia.png" width="20" alt="Historia" class="me-2" /> Historia
             </a>
           </li>
           <li class="nav-item" id="nav">
-            <a class="nav-link" href="galeria">
+            <a class="nav-link d-flex align-items-center" href="galeria">
               <img src="/img/galeria.png" width="20" alt="Galería" class="me-2" /> Galería
             </a>
           </li>
           <li class="nav-item" id="nav">
-            <a class="nav-link" href="soporte">
-              <img src="/img/soporte.png" width="20" alt="Galería" class="me-2" /> Soporte
+            <a class="nav-link d-flex align-items-center" href="soporte">
+              <img src="/img/soporte.png" width="20" alt="Soporte" class="me-2" /> Soporte
             </a>
           </li>
         </ul>
@@ -37,89 +40,59 @@
     </div>
   </nav>
 </template>
+
 <style lang="css" scoped>
-#titulo {
-  font-family:
-    Caesar Dressing,
-    cursive;
-  font-size: 50pt;
-}
+/* Estilos principales */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
-/* Estructura de la página para mantener el footer abajo */
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
+
+.navbar-toggler {
+  margin-left: auto; /* Alinea el botón al margen derecho */
 }
 
-main {
-  flex: 1;
-}
-
-footer,
-.navbar {
-  background-color: #312d2b; /* O elige otra opción que prefieras */
-  color: #ffffff; /* Mantén el texto en blanco para un buen contraste */
-  padding: 10px 20px; /* Espaciado interno */
-  box-shadow: 0 2px 5px rgba(249, 150, 0, 0.833); /* Sombra para dar profundidad */
-}
+/* Estilos para los elementos del menú */
 #nav {
   font-size: 12pt;
   background-color: transparent;
-  border: none;
   padding: 10px;
-  color: rgb(136, 91, 73);
+  color: rgb(255, 255, 255);
   display: flex;
-  position: relative;
+  align-items: center;
   gap: 5px;
   cursor: pointer;
   border-radius: 4px;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease;
 }
-#nav:not(:active):hover,
-#nav:focus {
+
+#nav a {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Hace que el enlace ocupe todo el área del contenedor */
+  padding: 10px;
+  color: inherit; /* Hereda el color del contenedor */
+  text-decoration: none; /* Quita subrayado del texto */
+}
+
+#nav:hover {
   background-color: #8d4f2f;
 }
-#nav:focus,
+
 #nav:active {
   background-color: #888685;
   outline: none;
 }
-#nav::before {
-  content: '';
-  position: absolute;
-  top: 30px;
-  right: 0px;
-  width: 100%;
-  height: 3px;
-  background-color: #8e8a89;
-  border-radius: 5px;
-  opacity: 0;
-}
 
-#nav:focus::before,
-#nav:active::before {
-  opacity: 1;
-}
-
-#nav svg {
-  width: 15px;
-}
-#input {
-  display: flex;
-  width: 100vw; /* 100% del ancho de la pantalla */
-  height: fit-content;
-  color: white; /* Texto blanco */
-  justify-content: center;
-  align-items: center; /* Alinea los elementos al centro vertical */
-  border-radius: 5px;
-  gap: 7.5px;
-  padding: 0;
+/* Ajustes para centrar el contenido en la vista móvil */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    justify-content: center;
+  }
+  #titulo {
+    font-size: 30pt; /* Tamaño más pequeño para dispositivos móviles */
+  }
 }
 </style>

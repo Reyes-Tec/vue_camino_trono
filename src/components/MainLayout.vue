@@ -20,88 +20,105 @@ export default {
 </script>
 
 <style lang="css" scoped>
-#titulo {
-  font-family:
-    Caesar Dressing,
-    cursive;
-  font-size: 50pt;
-}
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
-}
-/* Estructura de la página para mantener el footer abajo */
+/* styles.css */
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
+    background: radial-gradient(circle, rgb(221, 172, 117), rgb(219, 166, 87)),
+                linear-gradient(to bottom, rgba(186, 122, 26, 0.893), rgba(128, 83, 21, 0.8));
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "MedievalSharp", cursive;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-main {
-  flex: 1;
+h1, h2 {
+    font-family: "Caesar Dressing", cursive;
+    color: #fff;
 }
 
-footer,
-.navbar {
-  background-color: #312d2b; /* O elige otra opción que prefieras */
-  color: #ffffff; /* Mantén el texto en blanco para un buen contraste */
-  padding: 10px 20px; /* Espaciado interno */
-  box-shadow: 0 2px 5px rgba(249, 150, 0, 0.833); /* Sombra para dar profundidad */
-}
-#nav {
-  font-size: 12pt;
-  background-color: transparent;
-  border: none;
-  padding: 10px;
-  color: rgb(136, 91, 73);
-  display: flex;
-  position: relative;
-  gap: 5px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: all 0.2s ease;
-}
-#nav:not(:active):hover,
-#nav:focus {
-  background-color: #8d4f2f;
-}
-#nav:focus,
-#nav:active {
-  background-color: #888685;
-  outline: none;
-}
-#nav::before {
-  content: '';
-  position: absolute;
-  top: 30px;
-  right: 0px;
-  width: 100%;
-  height: 3px;
-  background-color: #8e8a89;
-  border-radius: 5px;
-  opacity: 0;
+.masthead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/intro.png") no-repeat center center;
+    background-size: cover;
 }
 
-#nav:focus::before,
-#nav:active::before {
-  opacity: 1;
+.masthead h1 {
+    font-size: 2rem;
+    color: #fde31a;
+    text-shadow: 2px 2px 0 #000;
 }
 
-#nav svg {
-  width: 15px;
+.masthead h2 {
+    font-size: 1rem;
+    color: #fdd40a;
 }
-#input {
-  display: flex;
-  width: 100vw; /* 100% del ancho de la pantalla */
-  height: fit-content;
-  color: white; /* Texto blanco */
-  justify-content: center;
-  align-items: center; /* Alinea los elementos al centro vertical */
-  border-radius: 5px;
-  gap: 7.5px;
-  padding: 0;
+
+.project h5 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.5rem;
+    color: antiquewhite;
+    text-decoration: underline;
 }
+
+.project {
+    padding: 2%;
+    color: aliceblue;
+    background-color: #312d2b;
+    border-radius: 5px;
+}
+
+.descarga {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background: transparent;
+    position: relative;
+    width: 15em;
+    height: 6em;
+    border: none;
+    outline: none;
+}
+
+.descarga .corner {
+    width: 4em;
+    height: 4em;
+    background: #313030;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+
+/* Flechas */
+.descarga:hover .arrow {
+    background: #434343;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 0.9rem; }
+    .descarga {
+        width: 12em;
+        height: 5em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.2rem; }
+    h2 { font-size: 0.8rem; }
+    .descarga {
+        width: 10em;
+        height: 4em;
+        font-size: 0.8em;
+    }
+}
+
 </style>

@@ -2,7 +2,7 @@
   <header class="masthead mb-3">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
       <div class="d-flex justify-content-center">
-        <div class="text-center">
+        <div class="text-center" id="home">
           <h1 class="mx-auto my-0 text-uppercase">¡Bienvenido a "Camino al Trono"!</h1>
           <h2 class="text-white-50 mx-auto mt-2 mb-5">
             Prepárate para sumergirte en una aventura inolvidable, donde tu habilidad para enfrentar
@@ -108,3 +108,8 @@
     </div>
   </section>
 </template>
+<style>
+#home{
+  margin-top: 10rem;
+}
+</style>
