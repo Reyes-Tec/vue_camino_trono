@@ -1,6 +1,6 @@
 <template>
   <section id="historia" class="mb-5">
-    <div class="container">
+    <div class="container" id="imagehistory">
       <div class="row">
         <!-- Primera imagen en fila vertical -->
         <div class="col-12 mb-4" style="padding-top: 4rem">
@@ -22,3 +22,9 @@
     </div>
   </section>
 </template>
+<style>
+
+#imagehistory{
+  margin-top: 1rem;
+}
+</style>

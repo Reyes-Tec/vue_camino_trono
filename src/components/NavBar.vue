@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="/" style="color: white;">Camino al Trono</a>
+      <a class="navbar-brand d-flex align-items-center" href="/" style="color: white;"><img src="/img/logojuego.png" width="80" alt="Inicio" class="me-2">Camino al Trono</a>
 
       <!-- Botón de menú alineado a la derecha en todas las vistas -->
       <button
