@@ -86,16 +86,13 @@
     </div>
 
     <!-- Botón de Descarga -->
+
     <br />
     <div class="text-center">
-      <button
-        class="descarga"
-        id="descarga"
-        onclick="window.location.href='https://drive.google.com/uc?export=download&id=1Gncxs9xRJKEzDcnsoPwwo6UHUtbZdEJY'"
-      >
-        DESCARGAR
-        <br />
-        VIDEOJUEGO
+      <button class="descarga btn" @click="showMessage">
+           DESCARGAR
+        <br>
+           VIDEOJUEGO
         <div id="clip">
           <div id="leftTop" class="corner"></div>
           <div id="rightBottom" class="corner"></div>
@@ -105,11 +102,32 @@
         <span id="rightArrow" class="arrow"></span>
         <span id="leftArrow" class="arrow"></span>
       </button>
+      <div v-if="showWarning" class="alert alert-warning mt-3">
+        Este juego es solo compatible con PC. ¿Quieres continuar con la descarga?
+        <button @click="downloadGame" class="btn btn-link">Sí, descargar</button>
+      </div>
     </div>
   </section>
 </template>
 <style>
-#home{
+#home {
   margin-top: 10rem;
 }
 </style>
+<script>
+export default {
+  data() {
+    return {
+      showWarning: false,
+    };
+  },
+  methods: {
+    showMessage() {
+      this.showWarning = true;
+    },
+    downloadGame() {
+      window.location.href = 'https://github.com/Reyes-Tec/vue_camino_trono/releases/download/untagged-667ee2336b44a7f8264f/Camino.al.trono.exe';
+    },
+  },
+};
+</script>
