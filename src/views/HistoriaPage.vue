@@ -25,6 +25,6 @@
 <style>
 
 #imagehistory{
-  margin-top: 1rem;
+  margin-top: 5rem;
 }
 </style>

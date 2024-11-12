@@ -19,12 +19,13 @@
   <!-- Sección de Contenido -->
   <section id="inicio" class="mb-5">
     <!-- Video embebido -->
-    <div class="ratio ratio-16x9 mb-4">
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+
+    <div class="ratio ratio-16x9 mb-4" style="max-width: 1150px; margin: 0 auto">
+      <video src="/public/mp4/PROMOCIONAL.mp4" controls></video>
     </div>
 
     <!-- Primer Proyecto -->
-    <div class="container px-9 px-lg-11">
+    <div class="container px-7 px-lg-9">
       <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
         <div class="col-lg-6">
           <img class="img-fluid" src="/img/paisaje.png" alt="Paisaje" />
@@ -89,10 +90,11 @@
 
     <br />
     <div class="text-center">
-      <button class="descarga btn" @click="showMessage">
-           DESCARGAR
-        <br>
-           VIDEOJUEGO
+      <button class="descarga btn text-center" @click="showMessage">
+        <div class="button-text">
+          DESCARGAR<br />
+          VIDEOJUEGO
+        </div>
         <div id="clip">
           <div id="leftTop" class="corner"></div>
           <div id="rightBottom" class="corner"></div>
@@ -101,10 +103,18 @@
         </div>
         <span id="rightArrow" class="arrow"></span>
         <span id="leftArrow" class="arrow"></span>
+
       </button>
-      <div v-if="showWarning" class="alert alert-warning mt-3">
-        Este juego es solo compatible con PC. ¿Quieres continuar con la descarga?
-        <button @click="downloadGame" class="btn btn-link">Sí, descargar</button>
+
+      <div
+        v-if="showWarning"
+        class="alert alert-warning d-flex justify-content-center align-items-center "
+      >
+        <span class="me-3"
+          >Este juego es solo compatible con PC. ¿Quieres continuar con la descarga?</span
+        >
+        <button @click="downloadGame" class="btn btn-link me-2">Sí, descargar</button>
+        <button @click="closeWarning" class="btn-close" aria-label="Close">×</button>
       </div>
     </div>
   </section>
@@ -113,21 +123,59 @@
 #home {
   margin-top: 10rem;
 }
+.descarga {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.button-text {
+  line-height: 1.5;
+}
+.alert {
+  position: relative;
+  width: 100%; /* Asegura que la alerta ocupe el ancho completo */
+  text-align: center;
+}
+
+.me-3 {
+  margin-right: 1rem; /* Espacio entre el texto y los botones */
+}
+
+.me-2 {
+  margin-right: 0.5rem; /* Espacio entre los botones */
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #333;
+}
 </style>
 <script>
 export default {
   data() {
     return {
       showWarning: false,
-    };
+    }
   },
   methods: {
     showMessage() {
-      this.showWarning = true;
+      this.showWarning = true
+    },
+    closeWarning() {
+      this.showWarning = false
     },
     downloadGame() {
-      window.location.href = 'https://github.com/Reyes-Tec/vue_camino_trono/releases/download/untagged-667ee2336b44a7f8264f/Camino.al.trono.exe';
+      window.location.href =
+        'https://github.com/Reyes-Tec/vue_camino_trono/releases/download/untagged-667ee2336b44a7f8264f/Camino.al.trono.exe'
     },
   },
-};
+}
 </script>

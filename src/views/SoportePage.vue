@@ -55,8 +55,8 @@
 
 
 .contact-section {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
 }
 .contact-section .card {
   border: 0;
