@@ -76,8 +76,8 @@
             <div class="content">
               <h3>Karn el Lancero</h3>
               <p>
-                ROL:<br />
-                HABILIDAD:<br />
+                ROL:Enemigo<br />
+                DESCRIPCIÓN: Un guerrero no-muerto, leal hasta la muerte y más allá, armado con una lanza mortal.<br />
                 DEBILIDAD:
               </p>
             </div>
@@ -91,10 +91,11 @@
               <img src="/img/6.png" class="img-fluid rounded" alt="Image 6" />
             </div>
             <div class="content">
-              <h3>Karn el Lancero</h3>
+              <h3>Escudomort</h3>
               <p>
-                ROL:<br />
-                HABILIDAD:<br />
+                ROL:Enemigo<br />
+                DESCRIPCIÓN:Un esqueleto protector que se levanta de entre los muertos para defender su tierra natal.
+                <br />
                 DEBILIDAD:
               </p>
             </div>
@@ -108,10 +109,11 @@
               <img src="/img/7.png" class="img-fluid rounded" alt="Image 7" />
             </div>
             <div class="content">
-              <h3>Karn el Lancero</h3>
+              <h3>Nebulath el Silencioso</h3>
               <p>
-                ROL:<br />
-                HABILIDAD:<br />
+                ROL: Enemigo<br />
+                DESCRIPCIÓN:Un espíritu errante, envuelto en una niebla sombría, que susurra secretos del más allá.
+                <br />
                 DEBILIDAD:
               </p>
             </div>
@@ -142,10 +144,11 @@
               <img src="/img/9.png" class="img-fluid rounded" alt="Image 9" />
             </div>
             <div class="content">
-              <h3>Karn el Lancero</h3>
+              <h3>Rojozoth</h3>
               <p>
-                ROL:<br />
-                HABILIDAD:<br />
+                ROL:Enemigo<br />
+                DESCRIPCIÓN: Una criatura alada sedienta de sangre, que merodea por la noche buscando presas.
+                <br />
                 DEBILIDAD:
               </p>
             </div>
@@ -159,10 +162,10 @@
               <img src="/img/10.png" class="img-fluid rounded" alt="Image 10" />
             </div>
             <div class="content">
-              <h3>Karn el Lancero</h3>
+              <h3>Picaterror</h3>
               <p>
-                ROL:<br />
-                HABILIDAD:<br />
+                ROL:Enemigo<br />
+                DESCRIPCIÓN:Un insecto feroz que defiende su territorio a toda costa, picando a cualquiera que se acerque.<br />
                 DEBILIDAD:
               </p>
             </div>
@@ -176,10 +179,10 @@
               <img src="/img/11.png" class="img-fluid rounded" alt="Image 11" />
             </div>
             <div class="content">
-              <h3>Karn el Lancero</h3>
+              <h3>Mortia el Acechador</h3>
               <p>
-                ROL:<br />
-                HABILIDAD:<br />
+                ROL: Enemigo<br />
+                DESCRIPCIÓN:Un arquero muerto viviente, que caza en silencio y dispara desde las sombras.<br />
                 DEBILIDAD:
               </p>
             </div>
@@ -193,23 +196,26 @@
               <img src="/img/12.png" class="img-fluid rounded" alt="Image 12" />
             </div>
             <div class="content">
-              <h3>Karn el Lancero</h3>
+              <h3>Sombrafuego</h3>
               <p>
-                ROL:<br />
-                HABILIDAD:<br />
+                ROL:Enemigo<br />
+                DESCRIPCIÓN:Un hechicero oscuro con poderes de fuego, temido por su habilidad para manipular las sombras.<br />
                 DEBILIDAD:
               </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 </template>
+
 <style scoped>
-.content{
+.content {
   text-align: center;
 }
+
 .container {
   position: relative;
   width: 1600px;
@@ -223,25 +229,38 @@
   position: relative;
   max-width: 300px;
   height: 215px;
-  background-color: #383736;
+  background-color: #444444 ;
   margin: 30px 10px;
   padding: 20px 15px;
-
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
   border-radius: 15px;
+  opacity: 0; /* Hace que las tarjetas sean invisibles inicialmente */
+  animation: fadeIn 0.5s forwards; /* Animación de aparición */
 }
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(20px); /* Aparece desde abajo */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Llega a su posición original */
+    opacity: 1;
+  }
+}
+
 .container .card:hover {
-  height: 320px;
+  height: 340px; /* Hace que la tarjeta sea aún más grande cuando el mouse pasa por encima */
+  transform: scale(1.05); /* Efecto de escala para un pequeño aumento */
 }
 
 .container .card .image {
   position: relative;
   width: 260px;
   height: 260px;
-
   top: -40%;
   left: 8px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
@@ -259,7 +278,6 @@
   padding: 10px 15px;
   color: #ffffff;
   text-align: center;
-
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
