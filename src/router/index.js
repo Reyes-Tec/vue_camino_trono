@@ -17,18 +17,13 @@ const routes = [
     component: HistoriaPage,
   },
   {
-    path: '/galeria',
-    name: 'Galeria',
-    component: GaleriaPage,
-  },
-  {
     path: '/soporte',
     name: 'Soporte',
     component: SoportePage,
   },
   {
-    path: '/galery',
-    name: 'Galery',
+    path: '/galeria',
+    name: 'Galeria',
     component: GaleryPage,
   },
 ]
