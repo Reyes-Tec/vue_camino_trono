@@ -218,7 +218,6 @@
 
 .container {
   position: relative;
-  width: 1600px;
   display: flex;
   align-items: center;
   justify-content: center;
