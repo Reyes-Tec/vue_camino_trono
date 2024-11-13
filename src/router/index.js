@@ -3,6 +3,7 @@ import HistoriaPage from '../views/HistoriaPage.vue'
 import GaleriaPage from '../views/GaleriaPage.vue'
 import SoportePage from '../views/SoportePage.vue'
 import HomeView from '@/views/HomeView.vue'
+import GaleryPage from '@/views/GaleryPage.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/soporte',
     name: 'Soporte',
     component: SoportePage,
+  },
+  {
+    path: '/galery',
+    name: 'Galery',
+    component: GaleryPage,
   },
 ]
 
