@@ -1,11 +1,8 @@
 <template>
   <section class="mb-5">
     <div class="container">
-      <div class="row" style="padding-top: 5rem">
-        <!-- Barra divisoria -->
-        <div class="divider">
-          <span>ARTHOR</span>
-        </div>
+      <div class="row" style="padding-top: 9rem">
+
         <!-- Tarjeta 1 -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
           <div class="card">
@@ -13,11 +10,10 @@
               <img src="/img/1.png" class="img-fluid rounded" alt="Image 1" />
             </div>
             <div class="content">
-              <h3>Karn el Lancero</h3>
+              <h3>ARTHOR</h3>
               <p>
-                ROL:<br />
-                HABILIDAD:<br />
-                DEBILIDAD:
+                ROL: Heredero Perdido<br /><br>
+                DESCRIPCIÓN: Arthor es un joven plebeyo que descubre que es el legítimo heredero al trono de Astalion.
               </p>
             </div>
           </div>
@@ -30,11 +26,10 @@
               <img src="/img/2.png" class="img-fluid rounded" alt="Image 2" />
             </div>
             <div class="content">
-              <h3>Karn el Lancero</h3>
+              <h3>ARTHOR</h3>
               <p>
-                ROL:<br />
-                HABILIDAD:<br />
-                DEBILIDAD:
+                ROL: Guerrero Destinado<br /><br>
+                DESCRIPCIÓN: La lucha en el campo de batalla es su principal herramienta para alcanzar el trono.
               </p>
             </div>
           </div>
@@ -47,11 +42,10 @@
               <img src="/img/3.png" class="img-fluid rounded" alt="Image 3" />
             </div>
             <div class="content">
-              <h3>Karn el Lancero</h3>
+              <h3>ARTHOR</h3>
               <p>
-                ROL:<br />
-                HABILIDAD:<br />
-                DEBILIDAD:
+                ROL: Protector de la Luz<br /><br>
+                DESCRIPCIÓN: Arthor, elegido por la profecía, debe mantener su integridad y pureza mientras enfrenta la oscuridad del reino.
               </p>
             </div>
           </div>
@@ -64,18 +58,13 @@
               <img src="/img/4.png" class="img-fluid rounded" alt="Image 4" />
             </div>
             <div class="content">
-              <h3>Karn el Lancero</h3>
+              <h3>ARTHOR</h3>
               <p>
-                ROL:<br />
-                HABILIDAD:<br />
-                DEBILIDAD:
+                ROL: Líder Redentor<br /><br>
+                DESCRIPCIÓN: Más allá de la espada, Arthor se enfrenta a un desafío de gobernar un reino caído.
               </p>
             </div>
           </div>
-        </div>
-        <!-- Barra divisoria -->
-        <div class="divider">
-          <span>ENEMIGOS</span>
         </div>
 
         <!-- Tarjeta 5 -->
@@ -218,36 +207,15 @@
   </section>
 </template>
 <style scoped>
-.divider {
-  background-color: black; /* Fondo negro */
-  color: white; /* Texto blanco */
-  font-weight: bold; /* Texto en negrita */
-  text-align: center; /* Centra el texto */
-  margin: 4rem; /* Márgenes para separar la barra de otras secciones */
-  font-size: 2rem;
-}
-
-.divider span {
-  display: inline-flex; /* Hace que el texto no ocupe toda la línea */
-}
-/* Media query para dispositivos móviles */
-@media (max-width: 768px) {
-  .divider {
-    font-size: 1.5rem; /* Reduce el tamaño de la fuente en pantallas pequeñas */
-    margin: 2rem; /* Reduce los márgenes en pantallas pequeñas */
-  }
-
-  .divider span {
-    display: inline-block; /* Cambia a inline-block para una mejor visualización */
-  }
+.content{
+  text-align: center;
 }
 .container {
   position: relative;
-  width: 1100px;
+  width: 1600px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 30px;
 }
 
@@ -255,7 +223,7 @@
   position: relative;
   max-width: 300px;
   height: 215px;
-  background-color: #fff;
+  background-color: #383736;
   margin: 30px 10px;
   padding: 20px 15px;
 
@@ -289,7 +257,7 @@
   position: relative;
   top: -140px;
   padding: 10px 15px;
-  color: #111;
+  color: #ffffff;
   text-align: center;
 
   visibility: hidden;
