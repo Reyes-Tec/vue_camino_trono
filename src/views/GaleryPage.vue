@@ -230,6 +230,17 @@
 .divider span {
   display: inline-flex; /* Hace que el texto no ocupe toda la línea */
 }
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .divider {
+    font-size: 1.5rem; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    margin: 2rem; /* Reduce los márgenes en pantallas pequeñas */
+  }
+
+  .divider span {
+    display: inline-block; /* Cambia a inline-block para una mejor visualización */
+  }
+}
 .container {
   position: relative;
   width: 1100px;
