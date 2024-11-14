@@ -90,35 +90,40 @@
 
     <br />
     <!-- Botón de Descarga -->
-    <div class="d-flex justify-content-center" id="descarga">
+    <!-- Botón de Descarga -->
+    <div class="d-flex flex-column align-items-center" id="descarga">
       <button class="brutalist-button text-center" @click="showMessage">
         <div class="ms-logo">
-          <div>
-            <img src="/img/logo.png" class="rounded" height="40" />
-          </div>
+          <img src="/img/logo.png" class="rounded" height="40" />
         </div>
         <div class="button-text text-center">
           <span>DESCARGAR</span>
           <span>VIDEOJUEGO</span>
         </div>
       </button>
-    </div>
 
-    <!-- Alerta de Compatibilidad -->
-    <div
-      v-if="showWarning"
-      class="alert alert-warning d-flex justify-content-center align-items-center fixed-bottom w-100 py-3"
-      style="z-index: 1050; bottom: 0; text-align: center; margin-top: 20px"
-    >
-      <span class="me-3">
-        Este juego es solo compatible con PC. ¿Quieres continuar con la descarga?
-      </span>
-      <button @click="downloadGame" class="btn btn-link me-2">Sí, descargar</button>
-      <button @click="closeWarning" class="btn-close" aria-label="Close">×</button>
+      <!-- Alerta de Compatibilidad -->
+      <div
+        v-if="showWarning"
+        class="alert alert-warning alert-dismissible text-center mt-3 w-75"
+        style="max-width: 500px"
+      >
+        <span> Este juego es solo compatible con PC. ¿Quieres continuar con la descarga? </span>
+        <button @click="downloadGame" class="btn btn-link ms-2">Sí, descargar</button>
+        <button @click="closeWarning" class="btn-close" aria-label="Close"></button>
+      </div>
     </div>
   </section>
 </template>
 <style>
+#home {
+  margin-top: 10rem;
+}
+.alert-dismissible {
+  padding: 15px;
+  font-size: 14px;
+}
+
 #descarga {
   position: relative;
   display: inline-flex;
@@ -288,7 +293,6 @@
     font-size: 12px;
   }
 }
-
 </style>
 <script>
 export default {
