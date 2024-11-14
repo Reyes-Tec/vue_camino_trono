@@ -89,41 +89,37 @@
     <!-- Botón de Descarga -->
 
     <br />
-    <div class="text-center">
-      <button class="descarga btn text-center" @click="showMessage">
-        <div class="button-text">
-          DESCARGAR<br />
-          VIDEOJUEGO
+    <!-- Botón de Descarga -->
+    <div class="d-flex justify-content-center" id="descarga">
+      <button class="brutalist-button text-center" @click="showMessage">
+        <div class="ms-logo">
+          <div>
+            <img src="/img/logo.png" class="rounded" height="40" />
+          </div>
         </div>
-        <div id="clip">
-          <div id="leftTop" class="corner"></div>
-          <div id="rightBottom" class="corner"></div>
-          <div id="rightTop" class="corner"></div>
-          <div id="leftBottom" class="corner"></div>
+        <div class="button-text text-center">
+          <span>DESCARGAR</span>
+          <span>VIDEOJUEGO</span>
         </div>
-        <span id="rightArrow" class="arrow"></span>
-        <span id="leftArrow" class="arrow"></span>
-
       </button>
+    </div>
 
-      <div
-        v-if="showWarning"
-        class="alert alert-warning d-flex justify-content-center align-items-center "
-      >
-        <span class="me-3"
-          >Este juego es solo compatible con PC. ¿Quieres continuar con la descarga?</span
-        >
-        <button @click="downloadGame" class="btn btn-link me-2">Sí, descargar</button>
-        <button @click="closeWarning" class="btn-close" aria-label="Close">×</button>
-      </div>
+    <!-- Alerta de Compatibilidad -->
+    <div
+      v-if="showWarning"
+      class="alert alert-warning d-flex justify-content-center align-items-center fixed-bottom w-100 py-3"
+      style="z-index: 1050; bottom: 0; text-align: center; margin-top: 20px"
+    >
+      <span class="me-3">
+        Este juego es solo compatible con PC. ¿Quieres continuar con la descarga?
+      </span>
+      <button @click="downloadGame" class="btn btn-link me-2">Sí, descargar</button>
+      <button @click="closeWarning" class="btn-close" aria-label="Close">×</button>
     </div>
   </section>
 </template>
 <style>
-#home {
-  margin-top: 10rem;
-}
-.descarga {
+#descarga {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -133,30 +129,166 @@
   font-size: 16px;
 }
 
-.button-text {
-  line-height: 1.5;
-}
-.alert {
+.brutalist-button {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido del botón horizontalmente */
+  flex-wrap: wrap; /* Permite que el texto se ajuste en múltiples líneas en pantallas pequeñas */
+  cursor: pointer;
+  width: 80%;
+  max-width: 500px;
+  height: 60px;
+  background-color: white;
+  color: #000;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border: 3px solid #fff;
+  outline: 3px solid #000;
+  box-shadow: 6px 6px 0 #efaf00;
+  transition: all 0.1s ease-out;
+  padding: 0 15px;
+  box-sizing: border-box;
   position: relative;
-  width: 100%; /* Asegura que la alerta ocupe el ancho completo */
+  overflow: hidden;
+}
+
+.brutalist-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  z-index: 1;
+  opacity: 0;
+}
+
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.brutalist-button:hover::before {
+  opacity: 1;
+  animation: slide 2s infinite;
+}
+
+.brutalist-button:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 #000;
+  background-color: #000;
+  color: #fff;
+}
+
+.brutalist-button:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0 #ffa201;
+  background-color: #fff;
+  color: #00000073;
+  border-color: #000;
+}
+
+.ms-logo {
+  display: flex; /* Cambiado a flex para centrar el contenido fácilmente */
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease-out;
+  position: relative;
+  z-index: 1;
+}
+
+.brutalist-button:hover .ms-logo {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.brutalist-button:active .ms-logo {
+  transform: rotate(10deg) scale(0.9);
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea el texto en el centro */
+  line-height: 1.2;
+  transition: transform 0.2s ease-out;
+  position: relative;
+  z-index: 4;
   text-align: center;
 }
 
-.me-3 {
-  margin-right: 1rem; /* Espacio entre el texto y los botones */
+.brutalist-button:hover .button-text {
+  transform: skew(-5deg);
 }
 
-.me-2 {
-  margin-right: 0.5rem; /* Espacio entre los botones */
+.brutalist-button:active .button-text {
+  transform: skew(5deg);
 }
 
-.btn-close {
-  background: none;
-  border: none;
-  font-size: 1.25rem;
-  cursor: pointer;
-  color: #333;
+.button-text span:first-child {
+  font-size: 11px;
+  text-transform: uppercase;
 }
+
+.button-text span:last-child {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* Responsividad para pantallas medianas */
+@media (max-width: 768px) {
+  .brutalist-button {
+    width: 90%;
+    height: 50px;
+  }
+
+  .button-text span:first-child {
+    font-size: 10px;
+  }
+
+  .button-text span:last-child {
+    font-size: 14px;
+  }
+
+  .ms-logo {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 576px) {
+  .brutalist-button {
+    width: 100%;
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .ms-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; /* Ajuste de margen para pantallas pequeñas */
+  }
+
+  .button-text span:first-child {
+    font-size: 10px;
+  }
+
+  .button-text span:last-child {
+    font-size: 12px;
+  }
+}
+
 </style>
 <script>
 export default {

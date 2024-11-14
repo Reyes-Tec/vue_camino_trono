@@ -228,7 +228,7 @@
   position: relative;
   max-width: 300px;
   height: 215px;
-  background-color: #444444 ;
+  background-color: #00000025 ;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
