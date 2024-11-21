@@ -142,8 +142,6 @@
               <p>
                 ROL:Enemigo<br />
                 DESCRIPCIÓN: Una criatura alada sedienta de sangre, que merodea por la noche buscando presas.
-                <br />
-                DEBILIDAD:
               </p>
             </div>
           </div>
@@ -159,8 +157,7 @@
               <h3>Picaterror</h3>
               <p>
                 ROL:Enemigo<br />
-                DESCRIPCIÓN:Un insecto feroz que defiende su territorio a toda costa, picando a cualquiera que se acerque.<br />
-                DEBILIDAD:
+                DESCRIPCIÓN:Un insecto feroz que defiende su territorio a toda costa, picando a cualquiera que se acerque.
               </p>
             </div>
           </div>
@@ -176,8 +173,7 @@
               <h3>Mortia el Acechador</h3>
               <p>
                 ROL: Enemigo<br />
-                DESCRIPCIÓN:Un arquero muerto viviente, que caza en silencio y dispara desde las sombras.<br />
-                DEBILIDAD:
+                DESCRIPCIÓN:Un arquero muerto viviente, que caza en silencio y dispara desde las sombras.
               </p>
             </div>
           </div>
@@ -193,8 +189,7 @@
               <h3>Sombrafuego</h3>
               <p>
                 ROL:Enemigo<br />
-                DESCRIPCIÓN:Un hechicero oscuro con poderes de fuego, temido por su habilidad para manipular las sombras.<br />
-                DEBILIDAD:
+                DESCRIPCIÓN:Un hechicero oscuro con poderes de fuego, temido por su habilidad para manipular las sombras.
               </p>
             </div>
           </div>
