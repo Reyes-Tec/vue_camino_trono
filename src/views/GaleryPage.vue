@@ -77,8 +77,7 @@
               <h3>Karn el Lancero</h3>
               <p>
                 ROL:Enemigo<br />
-                DESCRIPCIÓN: Un guerrero no-muerto, leal hasta la muerte y más allá, armado con una lanza mortal.<br />
-                DEBILIDAD:
+                DESCRIPCIÓN: Un guerrero no-muerto, leal hasta la muerte y más allá, armado con una lanza mortal.
               </p>
             </div>
           </div>
@@ -95,8 +94,6 @@
               <p>
                 ROL:Enemigo<br />
                 DESCRIPCIÓN:Un esqueleto protector que se levanta de entre los muertos para defender su tierra natal.
-                <br />
-                DEBILIDAD:
               </p>
             </div>
           </div>
@@ -113,8 +110,6 @@
               <p>
                 ROL: Enemigo<br />
                 DESCRIPCIÓN:Un espíritu errante, envuelto en una niebla sombría, que susurra secretos del más allá.
-                <br />
-                DEBILIDAD:
               </p>
             </div>
           </div>
@@ -127,11 +122,10 @@
               <img src="/img/8.png" class="img-fluid rounded" alt="Image 8" />
             </div>
             <div class="content">
-              <h3>Karn el Lancero</h3>
+              <h3>Viuda Escarlata</h3>
               <p>
-                ROL:<br />
-                HABILIDAD:<br />
-                DEBILIDAD:
+                ROL: Enemigo <br />
+                DESCRIPCIÓN:Una araña venenosa que acecha en las sombras, rápida y letal, con un cuerpo carmesí que advierte del peligro. <br />
               </p>
             </div>
           </div>

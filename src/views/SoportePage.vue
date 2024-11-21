@@ -3,17 +3,17 @@
     <div class="container px-4 px-lg-5">
       <div class="row gx-4 gx-lg-5">
         <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100 fade-in-up" style="animation-delay: 0.2s;">
+          <div class="card py-4 h-100 fade-in-up" style="animation-delay: 0.2s">
             <div class="card-body text-center">
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h3 style="color: black;">REQUISITOS PREVIOS</h3>
+              <h3 style="color: black">REQUISITOS PREVIOS</h3>
               <hr class="my-4 mx-auto" />
               <div class="small text-black-50">
-                <h4 style="color: black;">Hadware:</h4>
-                <ul style="color: black;">
+                <h4 style="color: black">Hadware:</h4>
+                <ul style="color: black">
                   <li>CPU: Procesador con soporte para SSE2.</li>
                   <li>RAM: Al menos 2 GB (4 GB recomendados).</li>
-                  <li>Almacenamiento: Según el tamaño del juego, puede requerir entre 100 MB y varios GB.</li>
+                  <li>Almacenamiento: Al menos 5 GB inlcluso algunos más.</li>
                 </ul>
               </div>
             </div>
@@ -21,30 +21,44 @@
         </div>
 
         <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100 fade-in-up" style="animation-delay: 0.4s;">
+          <div class="card py-4 h-100 fade-in-up" style="animation-delay: 0.4s">
             <div class="card-body text-center">
               <i class="fas fa-envelope text-primary mb-2"></i>
-              <h3 style="color: black;">GUÍAS Y TUTORIALES</h3>
+              <h3 style="color: black">GUÍAS Y TUTORIALES</h3>
               <hr class="my-4 mx-auto" />
               <div class="small text-black-50">
-                <h4><a href="/#descarga" style="color: black;">Ir al apartado de descarga</a></h4><br>
-                <h4><a href="#" style="color: black;">MANUAL DE USUARIO: APRENDE A JUGAR </a></h4>
+                <br />
+                <br />
+                <h4><a href="/#descarga" style="color: black">Ir al apartado de descarga</a></h4>
+                <br />
+                <h4>
+                  <a
+                    href="https://github.com/Reyes-Tec/vue_camino_trono/releases/download/untagged-7f5b169914767d7fdb1f/Manual.Videojuego.CAMINO.AL.TRONO.pdF"
+                    style="color: black"
+                    download="Manual.Videojuego.CAMINO.AL.TRONO.pdf"
+                  >
+                    MANUAL DE USUARIO: APRENDE A JUGAR
+                  </a>
+                </h4>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100 fade-in-up" style="animation-delay: 0.6s;">
+          <div class="card py-4 h-100 fade-in-up" style="animation-delay: 0.6s">
             <div class="card-body text-center">
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
-              <h3 style="color: black;">CONTACTOS</h3>
+              <h3 style="color: black">CONTACTOS</h3>
               <hr class="my-4 mx-auto" />
               <div class="small text-black-50">
-                <h4 style="color: black; text-transform:lowercase">chucdaniel66@gmail.com</h4><br>
-                <h4 style="color: black; text-transform:lowercase">e.alejandra2106@gmail.com</h4><br>
-                <h4 style="color: black; text-transform:lowercase">karenquijano2406@gmail.com</h4><br>
-                <h4 style="color: black; text-transform:lowercase">tecconcepcion09@gmail.com</h4>
+                <h4 style="color: black; text-transform: lowercase">chucdaniel66@gmail.com</h4>
+                <br />
+                <h4 style="color: black; text-transform: lowercase">e.alejandra2106@gmail.com</h4>
+                <br />
+                <h4 style="color: black; text-transform: lowercase">karenquijano2406@gmail.com</h4>
+                <br />
+                <h4 style="color: black; text-transform: lowercase">tecconcepcion09@gmail.com</h4>
               </div>
             </div>
           </div>
@@ -71,7 +85,6 @@
   animation: fadeInUp 1s ease forwards;
 }
 
-
 .contact-section {
   padding-top: 12rem;
   padding-bottom: 6rem;
@@ -80,9 +93,22 @@
   border: 0;
   border-bottom: 0.25rem solid #ffc767;
 }
-.contact-section .card h4, .contact-section .card .h4 {
+.contact-section .card h4,
+.contact-section .card .h4 {
   font-size: 0.8rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:
+    'Varela Round',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
@@ -105,9 +131,8 @@
   color: rgba(0, 0, 0, 0.897);
 }
 
-.projects-section{
+.projects-section {
   background-color: #000; /* Color de fondo */
   opacity: 0.5; /* Define la transparencia, 0.5 equivale al 50% */
 }
-
 </style>

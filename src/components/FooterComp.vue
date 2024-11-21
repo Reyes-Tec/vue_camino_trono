@@ -5,7 +5,7 @@
       <ul class="list-inline mb-3 d-flex justify-content-center flex-wrap">
         <li class="list-inline-item tag-item mx-2 my-1">
           <img src="/public/img/aventura.png" alt="Icono Aventura" class="tag-icon" />
-          <span class="tag-text">Aventura</span>
+          <span class="tag-text">Juego de Aventura</span>
         </li>
         <li class="list-inline-item tag-item mx-2 my-1">
           <img src="/public/img/pc.png" alt="Icono Edad Media" class="tag-icon" />
