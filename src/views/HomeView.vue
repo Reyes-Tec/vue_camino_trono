@@ -91,12 +91,12 @@
     <br />
     <!-- Botón de Descarga -->
     <!-- Botón de Descarga -->
-    <div class="d-flex flex-column align-items-center" id="descarga">
+    <div class="d-flex flex-column align-items-center" >
       <button class="brutalist-button text-center" @click="showMessage">
         <div class="ms-logo">
           <img src="/img/logo.png" class="rounded" height="40" />
         </div>
-        <div class="button-text text-center">
+        <div class="button-text text-center" id="descarga">
           <span>DESCARGAR</span>
           <span>VIDEOJUEGO</span>
         </div>
