@@ -98,7 +98,7 @@
         </div>
         <div class="button-text text-center" >
           <span>DESCARGAR</span>
-          <span id="descarga">VIDEOJUEGO</span>
+          <span >VIDEOJUEGO</span>
         </div>
       </button>
 

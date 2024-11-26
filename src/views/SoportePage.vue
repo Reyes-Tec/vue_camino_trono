@@ -29,7 +29,7 @@
               <div class="small text-black-50">
                 <br />
                 <br />
-                <h4><a href="/#descarga" style="color: black">Ir al apartado de descarga</a></h4>
+                <h4><a href="/#footer" style="color: black">Ir al apartado de descarga</a></h4>
                 <br />
                 <h4>
                   <a
