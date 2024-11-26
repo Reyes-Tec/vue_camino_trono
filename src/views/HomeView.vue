@@ -96,9 +96,9 @@
         <div class="ms-logo">
           <img src="/img/logo.png" class="rounded" height="40" />
         </div>
-        <div class="button-text text-center" id="descarga">
+        <div class="button-text text-center" >
           <span>DESCARGAR</span>
-          <span>VIDEOJUEGO</span>
+          <span id="descarga">VIDEOJUEGO</span>
         </div>
       </button>
 
