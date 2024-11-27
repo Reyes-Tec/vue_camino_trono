@@ -310,7 +310,7 @@ export default {
     },
     downloadGame() {
       window.location.href =
-        'https://github.com/Reyes-Tec/vue_camino_trono/releases/download/untagged-667ee2336b44a7f8264f/Camino.al.trono.exe'
+        'https://github.com/Reyes-Tec/vue_camino_trono/releases/download/juego/Camino_Al_Trono.exe'
     },
   },
 }
