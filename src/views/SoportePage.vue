@@ -33,7 +33,7 @@
                 <br />
                 <h4>
                   <a
-                    href="https://github.com/Reyes-Tec/vue_camino_trono/releases/download/Manual_Usuario/Manual.CAMINO.AL.TRONO.pdf"
+                    href="https://github.com/Reyes-Tec/vue_camino_trono/releases/download/CaminoAlTrono/Manual.CAMINO.AL.TRONO.pdf"
                     style="color: black"
                     download="Manual.Videojuego.CAMINO.AL.TRONO.pdf"
                   >
